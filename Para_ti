@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para ti con cariño</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0); /* Un degradado de colores cálidos */
+            color: #ffffff; /* Texto en color blanco */
+            text-align: center;
+            overflow: hidden; /* Para evitar barras de desplazamiento si hay animaciones */
+        }
+        .container {
+            position: relative;
+            animation: pulse 1.5s infinite alternate; /* Efecto de pulsación suave */
+            padding: 20px; /* Un poco de espacio alrededor del contenido */
+        }
+        h1 {
+            font-size: 4.5em; /* Tamaño grande para el mensaje principal */
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3); /* Sombra para que resalte */
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 7em; /* Corazón grande */
+            color: #e74c3c; /* Rojo vibrante */
+            animation: beat 1s infinite; /* Efecto de latido */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Centra el corazón */
+            opacity: 0.8; /* Ligeramente transparente */
+            z-index: -1; /* Detrás del texto */
+        }
+
+        /* Animaciones CSS */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(
